@@ -1,0 +1,13 @@
+---
+- name: Hello World
+  hosts:
+    - localhost
+  gather_facts: no
+  tasks:
+    - name: Print hello world
+      ansible.builtin.debug:
+        msg: "Hello world!"
+
+    - name: Print hello world with a variable
+      ansible.builtin.debug:
+        msg: "{{ text }}"
