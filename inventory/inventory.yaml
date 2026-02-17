@@ -1,3 +1,7 @@
 all:
   hosts:
     localhost:
+      ansible_connection: local
+    aap.apps.hub.aws.tntinfra.net:
+    api.hetzner.tntinfra.net:
+      ansible_port: 30007
